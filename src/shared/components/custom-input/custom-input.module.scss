@@ -1,0 +1,35 @@
+.currency_converter {
+  position: relative;
+  user-select: none;
+  &_input {
+    max-width: 18rem;
+    min-width: 18rem;
+    height: 4rem;
+    padding: 0 1rem;
+    border-radius: 0.3rem;
+    border: 1px solid #848484;
+    font-size: 1.5rem;
+    background: #FDFDFD;
+    transition: border 0.2s ease;
+    outline: none;
+    &:hover {
+      border: 1px solid #4f4e4e;
+    }
+    &:focus {
+      border: 1px solid black;
+    }
+  }
+  &_select {
+    position: absolute;
+    right: 0;
+    width: 7rem;
+    height: 100%;
+    text-align: center;
+    border: 1px solid #848484;
+    background: #FDFDFD;
+    border-radius: 0 0.3rem 0.3rem 0;
+    &_option {
+      font-weight: 200;
+    }
+  }
+}
